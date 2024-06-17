@@ -1,4 +1,3 @@
 package com.example.blog.user;
 
-public class User {
-}
+public record User (Long id, String name) { }
