@@ -2,7 +2,7 @@ package com.example.blog;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
-import static org.junit.jupiter.api.Assertions.assertEquals;
+import org.assertj.core.api.Assertions;
 
 @SpringBootTest
 public class TestExample {
@@ -10,6 +10,6 @@ public class TestExample {
     @Test
     public void testGreet() {
         String greeting = "Hello";
-        assertEquals("Hello", "Hello");
+        Assertions.assertThat("Hello").isEqualTo("Hello");
     }
 }
