@@ -1,4 +1,4 @@
-package com.example.blog.user;
+package com.example.blog.model;
 
 import jakarta.persistence.*;
 
@@ -6,7 +6,7 @@ import java.io.Serializable;
 
 @Entity
 @Table(name = "users")
-public class UserEntity implements Serializable {
+public class User implements Serializable {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -15,9 +15,9 @@ public class UserEntity implements Serializable {
     @Column(name = "name", nullable = false, length = 255)
     String name;
 
-    public UserEntity() { }
+    public User() { }
 
-    public UserEntity(Long id, String name) {
+    public User(Long id, String name) {
         this.id = id;
         this.name = name;
     }
