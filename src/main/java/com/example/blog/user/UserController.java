@@ -19,7 +19,7 @@ public class UserController {
         if (user.isPresent()) {
             return user.get();
         }
-        return new UserEntity(3L, "Guilherme");
 
+        return new UserEntity(3L, "Guilherme");
     }
 }
